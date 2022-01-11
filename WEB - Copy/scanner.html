@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            background-size: cover;
+            background-image: linear-gradient(rgba(10, 10, 10, 0.85), rgba(0, 0, 0, 0.85)), url(image/image4.jpg);
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font: inherit;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: YellowGreen;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            left: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content .header {
+            background: YellowGreen;
+            padding: 16px;
+            color: white;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            background-color: Azure;
+            height: 350px;
+        }
+        
+        .column a {
+            float: none;
+            color: DimGray;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .column a:hover {
+            background-color: #ddd;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        
+        .body {
+            margin-top: 1%;
+            margin-left: 8%;
+            margin-right: 8%;
+            color: white;
+            font-size: 25px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="../home.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <div class="dropdown">
+            <button class="dropbtn">Content
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div class="header">
+                    <h2>Computer Devices</h2>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3><a href="input.html">Input Device </a></h3>
+                        <a href="keyboard.html">Keyboard</a>
+                        <a href="mouse.html">Mouse</a>
+                        <a href="joy.html">Joy Stick</a>
+                        <a href="scanner.html">Scanner</a>
+                        <a href="mic.html">Microphone</a>
+                    </div>
+                    <div class="column">
+                        <h3><a href="output.html">Output Device</a></h3>
+                        <a href="monitor.html">Monitors</a>
+                        <a href="printer.html">Printers</a>
+                        <a href="speaker.html">Speakers</a>
+                        <a href="projector.html">Projector</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="body">
+        <h1>Scanner</h1>
+        <p>
+            Scanner is an input device, which works more like a photocopy machine. It is used when some information is available on paper and it is to be transferred to the hard disk of the computer for further manipulation.
+            <br><br>Scanner captures images from the source which are then converted into a digital form that can be stored on the disk. These images can be edited before they are printed.
+        </p>
+        <center><img src="image/sc2.png" width="30%" height="30%"></center>
+
+    </div>
+
+
+</body>
+
+</html>
